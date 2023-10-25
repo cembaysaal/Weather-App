@@ -7,7 +7,7 @@ protocol WeatherManagerDelegate: AnyObject {
 }
 
 class WeatherManager {
-    private let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=7002bf0f519521d322ba56723041355b&units=metric"
+    private let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=YOURAPIKEY&units=metric"
     weak var delegate: WeatherManagerDelegate?
     var onWeatherUpdate: ((WeatherModel) -> Void)?
     var onError: ((Error) -> Void)?
